@@ -1,0 +1,325 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(133, 192, 194);
+}
+
+.todocontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    /* height: 100%;
+    width: 100%; */
+    background-color:  rgb(133, 192, 194);
+}
+
+.heading{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* margin-bottom: 2rem; */
+}
+
+p{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.app{
+    margin-top: 5px;
+    width: 70%;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color:#de3f53; */
+}
+
+form input{
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+}
+
+form input:focus{
+    background-color: #efe9e9;
+}
+
+form button[type="submit"]{
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: #9e5c63;
+    color: #cbbec0;
+}
+
+form button[type="submit"]:hover{
+    background-color: #cbbec0;
+    color: #c6959a;
+}
+
+form button{
+    margin-left: 1rem;
+    /* padding: 10px 25px; */
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: #cb959b;
+    color: #cbbec0;
+}
+
+form button:hover{
+    background-color: #cbbec0;
+    color: #d5b7ba;
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* #todo-list i {
+  color: #455443;
+  cursor: pointer;
+}
+
+#todo-list .fa-pen-to-square {
+  color: #302e69;
+} */
+
+.edit-controller button{
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+.input-controller textarea{
+  font-size: 1px;
+}
+.update-controller button{
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+.task {
+  width: 90.7%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgba(179, 99, 99, 0.3);
+  border-radius: 2px;
+  padding: 8px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.input-controller {
+  display: flex;
+  gap: 30px;
+}
+
+.input-controller textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+  line-height: 1.4;
+  color: white;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-family: inherit;
+  transition: all 0.30s ease-in-out;
+}
+
+textarea:focus {
+  box-shadow: 0 0 5px white;
+}
+
+textarea{
+  font-size: 0.9rem;
+}
+.edit-controller {
+  display: flex;
+  gap: 5px;
+}
+
+.update-controller {
+  display: none;
+}
+
+.date{
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 1rem;
+  /* margin-bottom: 2rem; */
+}
+
+/* .app ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.app ul li{
+    padding: 15px;
+    background-color: #f5b1b8;
+    border: 1px solid #9e5c63;
+}
+
+.check {
+    width: 0.8em;
+    height: 0.8em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .check:checked {
+    background-color: #1dd2af;
+  }
+
+  .task {
+    font-size: 18px;
+    padding: 0 10px;
+    width: fit-content;
+    background: transparent;
+    border: none;
+    color: #fff;
+  }
+
+  .task:focus {
+    outline: none;
+  }
+
+  .app ul li i {
+    float: right;
+    cursor: pointer;
+  }
+
+  .app ul li i:hover {
+    color: rgb(255, 82, 82);
+  }
+  .completed {
+    color: rgba(192, 192, 192, 0.8);
+    text-decoration: line-through;
+  } */
+
+  /* tablet */
+  @media (max-width:768px)  { 
+    .app {
+      width: 90%;
+    }
+
+    .task {
+      width: 87.5%;
+    }
+  }
+
+  /* mobile */
+
+  
+  @media (max-width: 400px) {
+    .app {
+        width: 90%;
+    }
+
+    .task {
+        width: 90%; /* Adjust the width as needed */
+    }
+
+    form input{
+      font-size: 12px;
+    }
+    .input-controller {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-controller textarea {
+        width: 70%; /* Adjust the width as needed */
+        font-size: 12.3px; /* Reduce font size as needed */
+    }
+
+    .input-controller button {
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+
+    .date {
+        font-size: 0.75rem;
+       margin-top: -1rem;
+       margin-right: 15rem;
+    }
+
+    .update-controller button{
+      font-size: 10px;
+      padding: 2px 5px;
+    }
+}
+
+@media (max-width: 475px){
+  .task {
+    width: 95.5%; /* Adjust the width as needed */
+}
+
+form input{
+  font-size: 12px;
+}
+.input-controller {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-controller textarea {
+    width: 70%; /* Adjust the width as needed */
+    font-size: 12.3px; /* Reduce font size as needed */
+}
+
+.input-controller button {
+    font-size: 10px;
+    padding: 2px 5px;
+}
+
+.date {
+    font-size: 0.75rem;
+   margin-top: -1rem;
+   margin-right: 25rem;
+}
+
+.update-controller button{
+  font-size: 10px;
+  padding: 2px 5px;
+}
+}
+
+  /* laptop */
+  @media (max-width:1024px){
+    .app{
+        width: 90%;
+    }
+  }
