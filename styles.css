@@ -63,13 +63,13 @@ form button[type="submit"]{
     border-radius: 5px;
     outline: none;
     cursor: pointer;
-    background-color: #9e5c63;
-    color: #cbbec0;
+    background-color: #5c769e;
+    color: #f8f8f8;
 }
 
 form button[type="submit"]:hover{
-    background-color: #cbbec0;
-    color: #c6959a;
+    background-color: #bec8cb;
+    color: #150d0e;
 }
 
 form button{
@@ -104,7 +104,7 @@ form button:hover{
   color: #302e69;
 } */
 
-.edit-controller button{
+.econtroller button{
   padding: 8px;
   border-radius: 10px;
   cursor: pointer;
@@ -112,10 +112,10 @@ form button:hover{
   border: none;
 }
 
-.input-controller textarea{
+.icontroller textarea{
   font-size: 1px;
 }
-.update-controller button{
+.ucontroller button{
   padding: 8px;
   border-radius: 10px;
   cursor: pointer;
@@ -134,12 +134,12 @@ form button:hover{
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
-.input-controller {
+.icontroller {
   display: flex;
   gap: 30px;
 }
 
-.input-controller textarea {
+.icontroller textarea {
   width: 100%;
   outline: none;
   border: none;
@@ -161,12 +161,12 @@ textarea{
   font-size: 0.9rem;
   margin-top: 0.4rem;
 }
-.edit-controller {
+.econtroller {
   display: flex;
   gap: 5px;
 }
 
-.update-controller {
+.ucontroller {
   display: none;
 }
 
@@ -228,14 +228,14 @@ textarea{
         gap: 10px;
     }
 
-    .input-controller textarea {
+    .icontroller textarea {
         width: 70%; /* Adjust the width as needed */
         font-size: 12.3px; /* Reduce font size as needed */
         margin-top: -1.9rem;
         margin-left: 2rem;
     }
 
-    .input-controller button {
+    .icontroller button {
         font-size: 10px;
         padding: 2px 5px;
     }
@@ -246,7 +246,7 @@ textarea{
        margin-right: 15rem;
     }
 
-    .update-controller button{
+    .ucontroller button{
       font-size: 10px;
       padding: 2px 5px;
     }
@@ -260,19 +260,19 @@ textarea{
 form input{
   font-size: 12px;
 }
-.input-controller {
+.icontroller {
     flex-direction: column;
     gap: 10px;
 }
 
-.input-controller textarea {
+.icontroller textarea {
     width: 70%; /* Adjust the width as needed */
     font-size: 12.3px; /* Reduce font size as needed */
     margin-top: -1.9rem;
     margin-left: 2rem;
 }
 
-.input-controller button {
+.icontroller button {
     font-size: 10px;
     padding: 2px 5px;
 }
@@ -283,7 +283,7 @@ form input{
    margin-right: 25rem;
 }
 
-.update-controller button{
+.ucontroller button{
   font-size: 10px;
   padding: 2px 5px;
 }

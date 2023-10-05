@@ -37,20 +37,20 @@ function displayTasks() {
     for (let idx = 0; idx < tasksArray.length; idx++) {
         localStorage.getItem('tasks');
         tasksHTML += `<div class="task ">
-                        <div class="input-controller">
+                        <div class="icontroller">
                        ${tasksArray[idx].completed
                 ? '<input type="checkbox" onclick="taskComplete(this)" checked class="check">'
                 : '<input type="checkbox" onclick="taskComplete(this)" class="check">'
             }
                     <textarea disabled class=${tasksArray[idx].completed?'completed':''}>${tasksArray[idx].task}</textarea> <!-- Access task property -->
                     <div class="date">${tasksArray[idx].date}</div> <!-- Display date -->
-                    <div class="edit-controller">
+                    <div class="econtroller">
                         <button class="deleteBtn">Delete</button>
                         <button class="editBtn">Edit</button>
                     </div>
                 </div>
 
-                <div class="update-controller">
+                <div class="ucontroller">
                     <button class="saveBtn">Save</button>
                     <button class="cancelBtn">Cancel</button>
                 </div>
@@ -90,8 +90,8 @@ function DeleteEvents() {
 
 function EditEvents() {
     const editBtn = document.querySelectorAll(".editBtn");
-    const updateController = document.querySelectorAll(".update-controller");
-    const inputs = document.querySelectorAll(".input-controller textarea");
+    const updateController = document.querySelectorAll(".ucontroller");
+    const inputs = document.querySelectorAll(".icontroller textarea");
 
     for (let i = 0; i < editBtn.length; i++) {
         editBtn[i].addEventListener("click", function () {
@@ -103,8 +103,8 @@ function EditEvents() {
 
 function SaveEvents() {
     const saveBtn = document.querySelectorAll(".saveBtn");
-    const updateController = document.querySelectorAll(".update-controller");
-    const inputs = document.querySelectorAll(".input-controller textarea");
+    const updateController = document.querySelectorAll(".ucontroller");
+    const inputs = document.querySelectorAll(".icontroller textarea");
 
     for (let i = 0; i < saveBtn.length; i++) {
         saveBtn[i].addEventListener("click", function () {
@@ -118,8 +118,8 @@ function SaveEvents() {
 
 function CancelEvents() {
     const cancelBtn = document.querySelectorAll(".cancelBtn");
-    const updateController = document.querySelectorAll(".update-controller");
-    const inputs = document.querySelectorAll(".input-controller textarea");
+    const updateController = document.querySelectorAll(".ucontroller");
+    const inputs = document.querySelectorAll(".icontroller textarea");
 
     for (let i = 0; i < cancelBtn.length; i++) {
         cancelBtn[i].addEventListener("click", function () {
