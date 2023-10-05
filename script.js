@@ -71,6 +71,7 @@ function taskComplete(event) {
         }
     });
     localStorage.setItem("tasks", JSON.stringify(tasks));
+    location.reload();
     event.nextElementSibling.classList.toggle("completed");
 }
 
