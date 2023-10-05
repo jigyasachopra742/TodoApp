@@ -36,6 +36,7 @@ function displayTasks() {
     for (let idx = 0; idx < tasksArray.length; idx++) {
         tasksHTML += `<div class="task">
                         <div class="input-controller">
+                                <input type="checkbox" onclick="taskComplete(this)" class="check">
                                 <textarea disabled>${tasksArray[idx].task}</textarea> <!-- Access task property -->
                                 <div class="date">${tasksArray[idx].date}</div> <!-- Display date -->
                                 <div class="edit-controller">
@@ -57,6 +58,16 @@ function displayTasks() {
     CancelEvents();
 }
 
+function taskComplete(event) {
+    let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
+    tasks.forEach(task => {
+      if (task.task === event.nextElementSibling.value) {
+        task.completed = !task.completed;
+      }
+    });
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+    event.nextElementSibling.classList.toggle("completed");
+}
 
 function DeleteEvents(){
     let deleteBtns = document.getElementsByClassName('deleteBtn');

@@ -159,6 +159,7 @@ textarea:focus {
 
 textarea{
   font-size: 0.9rem;
+  margin-top: 0.4rem;
 }
 .edit-controller {
   display: flex;
@@ -177,57 +178,24 @@ textarea{
   /* margin-bottom: 2rem; */
 }
 
-/* .app ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-.app ul li{
-    padding: 15px;
-    background-color: #f5b1b8;
-    border: 1px solid #9e5c63;
-}
-
 .check {
-    width: 0.8em;
-    height: 0.8em;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: white;
-    border: 1px solid rgb(255, 255, 255);
-  }
+  width: 1em;
+  height: 1em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+  margin-top: 1rem;
+}
 
-  .check:checked {
-    background-color: #1dd2af;
-  }
+.check:checked {
+  background-color: #1dd2af;
+}
 
-  .task {
-    font-size: 18px;
-    padding: 0 10px;
-    width: fit-content;
-    background: transparent;
-    border: none;
-    color: #fff;
-  }
-
-  .task:focus {
-    outline: none;
-  }
-
-  .app ul li i {
-    float: right;
-    cursor: pointer;
-  }
-
-  .app ul li i:hover {
-    color: rgb(255, 82, 82);
-  }
-  .completed {
-    color: rgba(192, 192, 192, 0.8);
-    text-decoration: line-through;
-  } */
+.completed {
+  color: rgba(192, 192, 192, 0.8);
+  text-decoration: line-through;
+}
 
   /* tablet */
   @media (max-width:768px)  { 
@@ -263,6 +231,8 @@ textarea{
     .input-controller textarea {
         width: 70%; /* Adjust the width as needed */
         font-size: 12.3px; /* Reduce font size as needed */
+        margin-top: -1.9rem;
+        margin-left: 2rem;
     }
 
     .input-controller button {
@@ -298,6 +268,8 @@ form input{
 .input-controller textarea {
     width: 70%; /* Adjust the width as needed */
     font-size: 12.3px; /* Reduce font size as needed */
+    margin-top: -1.9rem;
+    margin-left: 2rem;
 }
 
 .input-controller button {
