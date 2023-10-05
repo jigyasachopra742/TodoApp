@@ -145,7 +145,7 @@ form button:hover{
   border: none;
   resize: none;
   line-height: 1.4;
-  color: white;
+  color: rgb(42, 36, 36);
   border-radius: 10px;
   background-color: transparent;
   font-size: 1.2rem;
