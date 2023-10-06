@@ -52,7 +52,6 @@ function displayTasks() {
 
                 <div class="ucontroller">
                     <button class="saveBtn">Save</button>
-                    <button class="cancelBtn">Cancel</button>
                 </div>
             </div>`;
     }
