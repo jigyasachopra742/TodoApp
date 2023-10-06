@@ -59,7 +59,6 @@ function displayTasks() {
     DeleteEvents();
     EditEvents();
     SaveEvents();
-    CancelEvents();
 }
 
 function taskComplete(event) {
@@ -115,18 +114,6 @@ function SaveEvents() {
     }
 }
 
-function CancelEvents() {
-    const cancelBtn = document.querySelectorAll(".cancelBtn");
-    const updateController = document.querySelectorAll(".ucontroller");
-    const inputs = document.querySelectorAll(".icontroller textarea");
-
-    for (let i = 0; i < cancelBtn.length; i++) {
-        cancelBtn[i].addEventListener("click", function () {
-            updateController[i].style.display = "none";
-            inputs[i].disabled = true;
-        });
-    }
-}
 
 
 function displayDate() {
